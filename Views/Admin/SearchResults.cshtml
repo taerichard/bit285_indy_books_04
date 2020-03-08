@@ -56,10 +56,10 @@ $( function() {
         content:function(){
             if(this.attributes.length<=2){
                 var id = this.attributes["data-id"].nodeValue;
-                // JSON call to our REST API route
-                $.getJSON('/api/writer/bookcount/'+id, function(item) {
+               /* Call the API */
+                $.getJSON('/api/writer/' + id + '/bookcount/', function(data) {
                     $("[data-id ="+id+"]")
-                        .attr('title', 'number of books: '+ item[0].count);
+                        .attr('title', 'number of books: '+ data.count);
                 });
             }
         }
