@@ -12,6 +12,7 @@
     </PackageReference>
     <PackageReference Include="Bogus" Version="29.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,7 +21,6 @@
     <Folder Include="Views\Shared\" />
     <Folder Include="Views\Admin\" />
     <Folder Include="wwwroot\" />
-    <Folder Include="Controllers\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
 </Project>
